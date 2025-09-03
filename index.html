@@ -16,7 +16,7 @@
     }
 
     .image-side {
-      flex: 1;
+      flex: 0 0 30%; /* fixa em 30% da largura */
       background: #111;
       display: flex;
       align-items: center;
@@ -30,7 +30,7 @@
     }
 
     .content-side {
-      flex: 1.2;
+      flex: 0 0 70%; /* ocupa 70% */
       padding: 2rem;
       overflow-y: auto;
     }
@@ -40,16 +40,14 @@
       line-height: 1.8;
     }
 
-    /* Unvisited link */
     a:link {
-      text-decoration: none; /* no underline */
-      font-weight: bold;     /* bold when not visited */
+      text-decoration: none;
+      font-weight: bold;
     }
 
-    /* Visited link */
     a:visited {
-      text-decoration: none; /* still no underline */
-      font-weight: normal;   /* not bold when visited */
+      text-decoration: none;
+      font-weight: normal;
     }
 
     @media (max-width: 768px) {
@@ -66,8 +64,7 @@
  <body>
    <div class="container">
      <div class="image-side">
-       <!-- Substitua o src pela imagem gerada -->
-       <img src="AI Poetry.png" alt="Painting of a computer writting poetry">
+       <img src="AI Poetry.png" alt="Computador a escrever poesia em estilo pintura a óleo">
      </div>
 
      <div class="content-side">
@@ -84,4 +81,3 @@
    </div>
  </body>
 </html>
-
