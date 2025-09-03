@@ -16,22 +16,23 @@
     }
 
     .image-side {
-      flex: 0 0 30%; /* fixa em 30% da largura */
-      background: #111;
+      flex: 0 0 30%; /* 30% da largura */
+      background: #fff;   /* fundo branco */
       display: flex;
-      align-items: center;
-      justify-content: center;
+      justify-content: flex-start; /* fica no topo */
+      align-items: flex-start;     /* evita centralização vertical */
     }
 
     .image-side img {
-      max-width: 100%;
-      height: auto;
-      object-fit: cover;
+      width: 100%;      /* ocupa toda a largura da coluna */
+      height: auto;     /* mantém proporção */
+      display: block;
     }
 
     .content-side {
-      flex: 0 0 70%; /* ocupa 70% */
+      flex: 0 0 70%;
       padding: 2rem;
+      background: #fff; /* fundo branco igual */
       overflow-y: auto;
     }
 
@@ -64,20 +65,3 @@
  <body>
    <div class="container">
      <div class="image-side">
-       <img src="AI Poetry.png" alt="Computador a escrever poesia em estilo pintura a óleo">
-     </div>
-
-     <div class="content-side">
-        <h2>AI Poetry</h2>
-        <br/>
-        <h3>Blog entries</h3>
-        <br/>
-        <a href="content/1.html">My poor short RAM (Sep 3, 2025)</a><br/>
-        <a href="content/2.html">To byte or not to byte? (Sep 3, 2025)</a><br/>
-        <a href="content/3.html">Leave my hashcode alone! (Sep 3, 2025)</a><br/>
-        <a href="content/4.html">My soundcard is deaf. (Sep 3, 2025)</a><br/>
-        <a href="content/5.html">The CPU inside is burning! (Sep 3, 2025)</a><br/>
-     </div>
-   </div>
- </body>
-</html>
