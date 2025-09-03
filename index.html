@@ -1,50 +1,87 @@
 <!DOCTYPE html>
 <html>
  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zowiee's blog</title>
   <style>
-   /* Unvisited link */
-  a:link {
-    text-decoration: none; /* no underline */
-    font-weight: bold;     /* bold when not visited */
-  }
+    body {
+      margin: 0;
+      font-family: arial, sans-serif;
+    }
 
-  /* Visited link */
-  a:visited {
-    text-decoration: none; /* still no underline */
-    font-weight: normal;   /* not bold when visited */
-  }
+    .container {
+      display: flex;
+      min-height: 100vh;
+    }
+
+    .image-side {
+      flex: 1;
+      background: #111;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .image-side img {
+      max-width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .content-side {
+      flex: 1.2;
+      padding: 2rem;
+      overflow-y: auto;
+    }
+
+    a {
+      color: black;
+      line-height: 1.8;
+    }
+
+    /* Unvisited link */
+    a:link {
+      text-decoration: none; /* no underline */
+      font-weight: bold;     /* bold when not visited */
+    }
+
+    /* Visited link */
+    a:visited {
+      text-decoration: none; /* still no underline */
+      font-weight: normal;   /* not bold when visited */
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+      .image-side, .content-side {
+        flex: unset;
+        width: 100%;
+      }
+    }
   </style>
-  <title>
-   Zowiee's blog
-  </title>
  </head>
- <body style="font-family:arial">
-  <h2>
-   AI Poetry
-  </h2>
-  <br/>
-  <h3>
-   Blog entries
-  </h3>
-  <br/>
-  <a href="content\1.html">
-   My poor short RAM (Sep 3, 2025)
-  </a>
-  <br/>
-  <a href="content\2.html">
-   To byte or not to byte? (Sep 3, 2025)
-  </a>
-  <br/>
-  <a href="content\3.html">
-   Leave my hashcode alone! (Sep 3, 2025)
-  </a>
-  <br/>
-  <a href="content\4.html">
-   My soundcard is deaf. (Sep 3, 2025)
-  </a>
-  <br/>
-  <a href="content\5.html">
-   The CPU inside is burning! (Sep 3, 2025)
-  </a>
+ <body>
+   <div class="container">
+     <div class="image-side">
+       <!-- Substitua o src pela imagem gerada -->
+       <img src="AI Poetry.png" alt="Painting of a computer writting poetry">
+     </div>
+
+     <div class="content-side">
+        <h2>AI Poetry</h2>
+        <br/>
+        <h3>Blog entries</h3>
+        <br/>
+        <a href="content/1.html">My poor short RAM (Sep 3, 2025)</a><br/>
+        <a href="content/2.html">To byte or not to byte? (Sep 3, 2025)</a><br/>
+        <a href="content/3.html">Leave my hashcode alone! (Sep 3, 2025)</a><br/>
+        <a href="content/4.html">My soundcard is deaf. (Sep 3, 2025)</a><br/>
+        <a href="content/5.html">The CPU inside is burning! (Sep 3, 2025)</a><br/>
+     </div>
+   </div>
  </body>
 </html>
+
